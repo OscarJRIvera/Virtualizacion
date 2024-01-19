@@ -1,0 +1,8 @@
+#Se utilizo Postman y se subio la collecion de postman adjuno con este archivo que es el codigo curl.
+
+#El codigo curl que nos convierte el postman
+curl --location 'http://www.randomnumberapi.com/api/v1.0/random?min=100&max=1000&count=5'
+curl --location 'https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart' \
+--header 'Authorization: Bearer ya29.a0AfB_byDIbFBt5yfP2_hd07orfV4C7eLYVPcTM-OT4gYsHov2uu_GWkYpOWVVDSxC5-H-wD_in-jaqdo5qKW-_eRiuE70KS-V890cP0JRvv-jx4vnxmVW_i-VRgw8XKdQpSQmN4R01j_a_OrCkgDTKedL_8Vl1uRocytCaCgYKAXASARMSFQHGX2MiyWMi_NiT5raN4-7ufJBJXw0171' \
+--form '=@"/C:/Users/User/Desktop/upload-options.json"' \
+--form '=@"/C:/Users/User/Desktop/prueba.txt"'

@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "5547a8bb-5fe5-467a-a48f-1fea0ade7bf7",
+		"name": "Virtualizacion 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17242506"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "scope",
+							"value": "https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/drive.file",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://localhost:8080",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "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",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "692941962465-1evgn1o3p6ibnobs2tuufto2q8tsr0n3.apps.googleusercontent.com",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth2.googleapis.com/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.google.com/o/oauth2/auth",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Google Drive Api Token 1",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/User/Desktop/prueba.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"upload",
+						"drive",
+						"v3",
+						"files"
+					],
+					"query": [
+						{
+							"key": "uploadType",
+							"value": "multipart"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
